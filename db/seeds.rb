@@ -11,5 +11,5 @@ Restaurant.create!(name: "Pizza East", address: "56A Shoreditch High St, London 
 Restaurant.create!(name: "Pizza Hut", address: "Sarmiento y Laprida", phone_number: "5576680", category: "italian")
 Restaurant.create!(name: "Sarita", address: "Mendoza y Corrientes", phone_number: "5576681", category: "belgian")
 Restaurant.create!(name: "El Polo", address: "25 de Mayo 605", phone_number: "5576690", category: "belgian")
-
+Restaurant.create!(name: "Juanita", address: "25 de Mayo 800", phone_number: "5579690", category: "belgian")
 puts "Finished!"

@@ -1,0 +1,11 @@
+<div class="container mt-2">
+  <h2>Please fill the details below</h2>
+    <%= simple_form_for @restaurant do |f| %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :phone_number %>
+      <%= f.input :category, collection: Restaurant::CATEGORIES, prompt: :translate %>
+      <%= f.submit %>
+    <% end %>
+  <h4><%= link_to "Back", restaurants_path, class: "text-decoration-none" %><i class="fa-regular fa-circle-left"></i></h4>
+</div>

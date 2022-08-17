@@ -1,0 +1,10 @@
+<div class="container mt-2">
+  <h1>YELP!</h1>
+  <div class="card list-inline">
+    <% @restaurants.each do |restaurant| %>
+      <li class="list-group-item m-2"> <%= link_to restaurant.name, restaurant_path(restaurant), class: "text-decoration-none" %></li>
+    <% end %>
+  </div>
+
+  <h4><%= link_to "Add New Restaurant", new_restaurant_path, class: "text-decoration-none" %><i class="fa-solid fa-burger"></i></h4>
+</div>
